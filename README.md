@@ -1,0 +1,1 @@
+# Bousfield_et_al_2023_Timber_losses_through_wildfire
