@@ -2,4 +2,4 @@
 
 Deposited code for Bousfield et al. (2023) Nature Geoscience, "Substantial and increasing global losses of timber-producing forest due to wildfires", DOI: xyz.
 
-All code to reproduce the paper. See individual code file for further descriptions.
+All code to reproduce the paper. See individual code file for further description.
