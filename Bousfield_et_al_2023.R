@@ -2,18 +2,19 @@
 ##### Intro ######
 ##################
 
-### R scripts for Bousfield et al., Nature Geoscience, 2023 ###
+### R script for Bousfield et al., Nature Geoscience, 2023 ###
 ### "Substantial and increasing global losses of timber-producing forest due to wildfires" ###
 
 ## This script uses freely available datasets to estimate the spatial extent and temporal trends of stand replacing wildfires on timber-producing forests ##
 
 ## Datasets used ##
 # Logging layers - Lesiv et al (2022) global forest management map (https://doi.org/10.5281/zenodo.5879022)
-#                - Curtis et al (2018) map of forest loss by driver (https://data.globalforestwatch.org/documents/gfw::tree-cover-loss-by-dominant-driver-2022/about)
+#                - Curtis et al (2018) map of forest loss by driver (https://data.globalforestwatch.org/documents/gfw::tree-cover-loss-by-dominant-driver-2022/about), only including areas mapped as loss category 3 (i.e. forest loss caused by forestry)
 # Fire layers - Tyukavina et al (2022) global map of wildfire-driven forest loss, regular layer taken directly from (https://glad.umd.edu/dataset/Fire_GFL/)
 #             - Burn estimate + 1SE layers (filename: annual_plus_SE...) (low certainty) taken using all burned pixels from Tyukavina with confidence codes 2,3 and 4, 
-#             - Burn estimate - 1SE layers (filenmae: high_certainty...) (high certainty) taken using only burned pixels with confidence code 4
+#             - Burn estimate - 1SE layers (filename: high_certainty...) (high certainty) taken using only burned pixels with confidence code 4
 #             - No confidence levels supplied for Africa region by Tyukavina et al., hence no uncertainty estimates for this region
+#             - see (https://glad.umd.edu/dataset/Fire_GFL/) for more information on how to access certainty levels from the Tyukavina et al. paper
 
 ## Methodology
 # The general methodology is as follows:
